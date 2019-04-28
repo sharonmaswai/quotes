@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'quotes-app';
   h1 = 'Quotes'
+  quotes: string[];
+
+  constructor(){
+    this.quotes= [
+      "Watch Finding Nemo","Buy Cookies","Get new phone case"
+    ]
+  }
 }
