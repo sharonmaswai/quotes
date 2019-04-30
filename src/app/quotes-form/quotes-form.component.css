@@ -1,10 +1,11 @@
-.form {
-    font-family: 'Mystery Quest', cursive;
-   
-}   
+
+    
+  
 body {
     padding-left: 200px;
     padding-bottom: 100px;
     padding-right: 200px;
-    background-color: lightblue
+    background-color: lavender;
+    font-family: 'Mystery Quest', cursive;
+
 }
