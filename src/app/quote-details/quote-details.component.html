@@ -1,3 +1,11 @@
-<p>
-  quote-details works!
-</p>
+<div class="details">
+    <p>Published by {{quote.submitter}} </p>
+    <br>
+    
+    <button id="but" class="btn btn-primary" (click)='upVote(true)' type="button" name="button"><img src="https://cdn3.iconfinder.com/data/icons/black-easy/512/538774-like_512x512.png" alt=""width="20px" height="20px"> {{quote.upVote}}</button>
+    <button id="but" class="btn btn-primary" (click)='downVote(true)' type="button" name="button" > <img src="https://cdn2.iconfinder.com/data/icons/business-set-2/512/Icon_2-512.png" alt="" width="20px" height="20px"> {{quote.downVote}}</button>
+    
+    
+    
+
+</div>
