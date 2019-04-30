@@ -15,13 +15,13 @@ export class QuoteComponent implements OnInit {
     toogleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
     }
-    quote:Quotes;
-    addNewQuotse(quotes:Quotes){
-    this.quote=new Quotes(1,0,0,"","",)
+    
+    addNewQuotes(Quotes){
+    this.quotes=new Quotes(1,0,0,"","",)
     let quotesLength=this.quotes.length;
-    quotes.id=quotesLength+1;
-    this.quote=quotes;
-    this.quotes.push(this.quote);
+    Quotes.id=quotesLength+1;
+    this.quotes=Quotes;
+    this.quotes.push(Quotes);
     }
     
   ngOninit(){

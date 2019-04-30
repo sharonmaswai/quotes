@@ -3,7 +3,7 @@
 
     
         <app-quotes-form (addQuotes)="addNewQuotes($event)"></app-quotes-form>
-        <p *ngFor='let quote of quotes'>{{quote.description}}~{{quote.name}}</p>
+        <p *ngFor='let quote of quotes'>{{quote.description}} <br> ~{{quote.name}}</p>
     
     
 </div>

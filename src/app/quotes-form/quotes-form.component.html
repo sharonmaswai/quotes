@@ -9,7 +9,8 @@
 <body>
         <div class="container-fluid">
                 <div class="row">
-                    <form #quotesForm='ngForm'>
+                    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+                    
                         <!-- Name Form -->
                         <div class="form-group">
                             <label for="name">Name</label>
@@ -31,9 +32,9 @@
                             
                         </div>
                         
-                        <button type="Submit" class="btn btn-success btn-lg">Add Goal</button>
+                        <button type="Submit" class="btn btn-info btn-lg">Submit quote</button>
                     </form>
                 </div>
-            </div>
+        </div>
 </body>
 </html>

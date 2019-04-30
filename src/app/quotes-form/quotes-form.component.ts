@@ -10,11 +10,13 @@ export class QuotesFormComponent implements OnInit {
   newQuotes=new Quotes (0, 0,0,"","",);
   @Output() addQuotes=new EventEmitter<Quotes>();
   
-  submitGoal(){
+  submitQuote(){
       this.addQuotes.emit(this.newQuotes);
 
   }
-  ngOnInit
+  ngOnInit() {
+
+  }
 
   
 }
