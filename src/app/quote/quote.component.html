@@ -1,0 +1,10 @@
+<link href="https://fonts.googleapis.com/css?family=Mystery+Quest" rel="stylesheet">
+<div class="loadedquotes">
+
+    
+        <app-quotes-form (addQuotes)="addNewQuotes($event)"></app-quotes-form>
+        <p *ngFor='let quote of quotes'>{{quote.description}}~{{quote.name}}</p>
+    
+    
+</div>
+

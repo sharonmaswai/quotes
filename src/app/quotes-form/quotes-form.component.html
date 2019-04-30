@@ -5,56 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Mystery+Quest" rel="stylesheet">
     <title>Quotes-app</title>
-    
 </head>
 <body>
-    
-        
-        <h1 class="head" id >The {{h1}} Place</h1>
-
-        
-                <div class="form">
-                       
+        <div class="container-fluid">
+                <div class="row">
+                    <form #quotesForm='ngForm'>
+                        <!-- Name Form -->
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text"  class="form-control" id="name" [(ngModel)]="newQuotes.name" name="name" #name="ngModel" required>
+                            
+                            <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                                <p> Name is Required</p>
+                                
+                            </div>
+                        </div>
+                        <!-- Description Input -->
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea class="form-control" id="description" rows="4" [(ngModel)]="newQuotes.description" name="description" #description="ngModel" required></textarea>
+                            <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
+                                <p> Description is Required</p>
+                                
+                            </div>
+                            
+                        </div>
                         
-                        
-                            <div class="container-fluid">
-                                    <div class="row">
-                                     
-                                        <form>
-                                            <div class="form-group">
-                                  
-                                                <label for="name">Quote:</label>
-                                                <input type="text" required class="form-control" id="name">
-                                  
-                                            </div>
-                                            <div class="form-group">
-                                  
-                                                <label for="description">Author:</label>
-                                                <textarea class="form-control" id="description" rows="4" required></textarea>
-                                                
-                                            </div>
-                                            <div class="form-group">
-                                  
-                                                    <label for="description">Submitter:</label>
-                                                    <textarea class="form-control" id="description" rows="4" required></textarea>
-                                                    
-                                                </div>
-                                            <div>
-                                                <button class="btn btn-info">SUBMIT</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                  </div>
-                                  
-                    
-                    </div>
-                     
-                    
-
-                   
-                   
-    
-    
-    
+                        <button type="Submit" class="btn btn-success btn-lg">Add Goal</button>
+                    </form>
+                </div>
+            </div>
 </body>
 </html>
