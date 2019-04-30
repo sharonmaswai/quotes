@@ -3,7 +3,12 @@
 
     
         <app-quotes-form (addQuotes)="addNewQuotes($event)"></app-quotes-form>
-        <p *ngFor='let quote of quotes'>{{quote.description}} <br> ~{{quote.name}}</p>
+        <p *ngFor='let quote of quotes'>{{quote.description}} <br> ~{{quote.name}} <br>
+            <button id="butn" class="btn btn-info"  type="button" name="button"><img src="https://image.flaticon.com/icons/svg/25/25423.svg" alt=""width="20px" height="20px"> Like</button>
+            <button id="butn" class="btn btn-info" type="button" name="button" > <img src="https://image.flaticon.com/icons/svg/25/25395.svg" alt="" width="20px" height="20px">Dislike</button>
+
+        </p>
+       
         <br>
         
             
