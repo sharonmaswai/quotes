@@ -33,7 +33,7 @@
                         </div>
                         <div class="form-group">
                             <label for="description">Submitter</label>
-                            <textarea class="form-control" id="submitter" rows="4" [(ngModel)]="newQuotes.submitter" name="submitter" #description="ngModel" required></textarea>
+                            <textarea class="form-control" id="submitter" rows="4" [(ngModel)]="newQuotes.submitter" name="submitter" #submitter="ngModel" required></textarea>
                             <div [hidden]="submitter.valid || submitter.submitter" class="alert alert-danger">
                                 <p> Submitter is Required</p>
                                 
