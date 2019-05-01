@@ -13,7 +13,7 @@
                     
                         <!-- Name Form -->
                         <div class="form-group">
-                            <label for="name">Name</label>
+                            <label for="name">Author</label>
                             <input type="text"  class="form-control" id="name" [(ngModel)]="newQuotes.name" name="name" #name="ngModel" required>
                             
                             <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
@@ -23,10 +23,19 @@
                         </div>
                         <!-- Description Input -->
                         <div class="form-group">
-                            <label for="description">Description</label>
+                            <label for="description">Quote</label>
                             <textarea class="form-control" id="description" rows="4" [(ngModel)]="newQuotes.description" name="description" #description="ngModel" required></textarea>
                             <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
-                                <p> Description is Required</p>
+                                <p> Quote is Required</p>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Submitter</label>
+                            <textarea class="form-control" id="submitter" rows="4" [(ngModel)]="newQuotes.submitter" name="submitter" #description="ngModel" required></textarea>
+                            <div [hidden]="submitter.valid || submitter.submitter" class="alert alert-danger">
+                                <p> Submitter is Required</p>
                                 
                             </div>
                             
